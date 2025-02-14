@@ -17,3 +17,5 @@ struct ContentView: View {
 @State private var gameTimer: Timer? = nil
 
 }
+VStack(spacing: 20) {
+}

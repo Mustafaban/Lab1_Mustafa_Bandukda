@@ -19,3 +19,6 @@ struct ContentView: View {
 }
 VStack(spacing: 20) {
 }
+Text("Is it prime?")
+    .font(.title2)
+    .foregroundColor(.gray)

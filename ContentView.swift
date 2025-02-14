@@ -67,3 +67,9 @@ func startTimer() {
         nextRound()
     }
 }
+func resetGame() {
+    correctAnswers = 0
+    incorrectAnswers = 0
+    totalRounds = 0
+    currentNumber = Int.random(in: 1...100)
+}

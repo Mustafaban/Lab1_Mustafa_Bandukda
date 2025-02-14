@@ -33,3 +33,9 @@ HStack(spacing: 20) {
     Button("Not Prime") { evaluateAnswer(isPrime: false) }
         .buttonStyle(BasicButtonStyle(color: .red))
 }
+if let result = feedback {
+    Image(systemName: result ? "checkmark.circle.fill" : "xmark.circle.fill")
+        .resizable()
+        .frame(width: 50, height: 50)
+        .foregroundColor(result ? .green : .red)
+}

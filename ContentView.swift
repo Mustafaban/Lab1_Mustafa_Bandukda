@@ -91,3 +91,6 @@ func checkIfPrime(_ num: Int) -> Bool {
     guard num > 1 else { return false }
     return !(2..<num).contains { num % $0 == 0 }
 }
+#Preview {
+    ContentView()
+}

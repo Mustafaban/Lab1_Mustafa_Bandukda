@@ -61,3 +61,9 @@ func nextRound() {
     totalRounds += 1
     if totalRounds % 10 == 0 { showEndAlert = true }
 }
+func startTimer() {
+    gameTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+        incorrectAnswers += 1
+        nextRound()
+    }
+}

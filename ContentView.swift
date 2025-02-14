@@ -73,3 +73,17 @@ func resetGame() {
     totalRounds = 0
     currentNumber = Int.random(in: 1...100)
 }
+struct BasicButtonStyle: ButtonStyle {
+    let color: Color
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.title3)
+            .bold()
+            .padding()
+            .frame(width: 130, height: 50)
+            .background(color)
+            .foregroundColor(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+}

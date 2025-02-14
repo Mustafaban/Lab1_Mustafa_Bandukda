@@ -56,3 +56,8 @@ func evaluateAnswer(isPrime: Bool) {
     }
     nextRound()
 }
+func nextRound() {
+    currentNumber = Int.random(in: 1...100)
+    totalRounds += 1
+    if totalRounds % 10 == 0 { showEndAlert = true }
+}

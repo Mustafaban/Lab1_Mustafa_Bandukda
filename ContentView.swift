@@ -41,3 +41,8 @@ if let result = feedback {
 }
 Text("✅ \(correctAnswers) | ❌ \(incorrectAnswers)")
     .font(.headline)
+.alert("Game Over", isPresented: $showEndAlert) {
+    Button("Restart") { resetGame() }
+} message: {
+    Text("Correct: \(correctAnswers)\nWrong: \(incorrectAnswers)")
+}

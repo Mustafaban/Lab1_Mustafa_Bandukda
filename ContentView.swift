@@ -22,3 +22,7 @@ VStack(spacing: 20) {
 Text("Is it prime?")
     .font(.title2)
     .foregroundColor(.gray)
+
+Text("\(currentNumber)")
+    .font(.system(size: 70, weight: .bold))
+    .padding()

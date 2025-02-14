@@ -39,3 +39,5 @@ if let result = feedback {
         .frame(width: 50, height: 50)
         .foregroundColor(result ? .green : .red)
 }
+Text("✅ \(correctAnswers) | ❌ \(incorrectAnswers)")
+    .font(.headline)

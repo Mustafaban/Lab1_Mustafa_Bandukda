@@ -8,3 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var currentNumber = Int.random(in: 1...100)
+@State private var correctAnswers = 0
+@State private var incorrectAnswers = 0
+@State private var totalRounds = 0
+@State private var showEndAlert = false
+@State private var feedback: Bool? = nil
+@State private var gameTimer: Timer? = nil
+
+}

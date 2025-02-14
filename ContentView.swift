@@ -26,3 +26,10 @@ Text("Is it prime?")
 Text("\(currentNumber)")
     .font(.system(size: 70, weight: .bold))
     .padding()
+HStack(spacing: 20) {
+    Button("Prime") { evaluateAnswer(isPrime: true) }
+        .buttonStyle(BasicButtonStyle(color: .green))
+
+    Button("Not Prime") { evaluateAnswer(isPrime: false) }
+        .buttonStyle(BasicButtonStyle(color: .red))
+}

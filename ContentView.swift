@@ -46,3 +46,13 @@ Text("✅ \(correctAnswers) | ❌ \(incorrectAnswers)")
 } message: {
     Text("Correct: \(correctAnswers)\nWrong: \(incorrectAnswers)")
 }
+func evaluateAnswer(isPrime: Bool) {
+    if checkIfPrime(currentNumber) == isPrime {
+        correctAnswers += 1
+        feedback = true
+    } else {
+        incorrectAnswers += 1
+        feedback = false
+    }
+    nextRound()
+}
